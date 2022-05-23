@@ -152,6 +152,35 @@ ul {
   color: var(--accent-black);
 }
 
+.nav-mail::before{
+  display: inline-block;
+  content: "";
+  
+  margin-right: 10px;
+  width: 16px;
+  height: 12px; 
+  
+  background-image: url(../images/nav-pic/mail-icon.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  /* outline: 2px solid tomato; */
+}
+
+.nav-phone::before {
+  display: inline-block;
+  content: "";
+  margin-right: 10px;
+  width: 10px;
+  height: 16px;
+  background-image: url(../images/nav-pic/tel-icon.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+
 .nav-phone {
   font-weight: 500;
   font-size: 14px;
@@ -271,6 +300,35 @@ ul {
   color: var(--accent-black);
 }
 
+.about-list::before{
+  display:block;
+  content:"";
+  margin-bottom: 30px;
+  height: 120px;
+  background: rgba(245, 244, 250, 1);
+  background-size:contain;
+  background-repeat:no-repeat;
+  background-position:center;
+
+  /* outline: 1px solid tomato; */
+}
+
+.item-antenna::before {
+  background-image: url(../images/about/antenna.svg);
+}
+
+.item-clock::before {
+  background-image: url(../images/about/clock.svg)
+}
+
+.item-diagram::before {
+  background-image: url(../images/about/diagram.svg)
+}
+
+.item-astronaut::before {
+  background-image: url(../images/about/astronaut.svg);
+}
+
 /* ======== /ABOUT ========*/
 
 /* ======== Examples ========*/
@@ -333,6 +391,53 @@ img {
 }
 
 /* ======== /TEAM ========*/
+/* ======== Our Clients ========*/
+
+.our-clients {
+}
+
+.our-clients-flex {
+  display: flex;
+}
+
+.our-clients-flex .retangle + .retangle {
+  margin-left: 30px;
+}
+
+.retangle {
+  margin-left: auto;
+  margin-right: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid rgba(175, 177, 184, 1)
+}
+
+.logo-1 {
+  background-image: url(../images/Our-clients/logo-1.svg)
+}
+
+.logo-2{
+  background-image: url(../images/Our-clients/logo-2.svg)
+}
+
+.logo-3 {
+  background-image: url(../images/Our-clients/logo-3.svg);
+}
+
+.logo-4 {
+  background-image: url(../images/Our-clients/logo-4.svg)
+}
+
+.logo-5 {
+  background-image: url(../images/Our-clients/logo-5.svg);
+}
+.logo-6 {
+  background-image: url(../images/Our-clients/logo-6.svg);
+}
+/* ======== /Our Clients ========*/
 /* ======== FOOTER ========*/
 
 .footer {
