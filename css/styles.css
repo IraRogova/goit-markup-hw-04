@@ -168,7 +168,7 @@ ul {
   /* outline: 2px solid tomato; */
 }
 
-.nav-phone::before {
+/* .nav-phone::before {
   display: inline-block;
   content: "";
   margin-right: 10px;
@@ -179,15 +179,20 @@ ul {
   background-repeat: no-repeat;
   background-position: center;
 
-}
+} */
 
 .nav-phone {
+ 
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
 
   color: var(--accent-black);
+}
+
+.nav-phone-icon{
+  display: inline-block;
 }
 
 /* ======== /HEADER ========*/
@@ -388,6 +393,10 @@ img {
 .pic-discription {
   padding: 30px 15px;
   text-align: center;
+}
+
+.social-list {
+  display: flex;
 }
 
 /* ======== /TEAM ========*/
