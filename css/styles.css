@@ -144,6 +144,8 @@ ul {
 }
 
 .nav-mail {
+  display: flex;
+  align-items:center;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -189,6 +191,9 @@ ul {
   letter-spacing: 0.02em;
 
   color: var(--accent-black);
+}
+.nav-icons {
+  margin-right: 10px;
 }
 
 .nav-icons:hover,
@@ -458,12 +463,12 @@ border-radius: 0px 0px 4px 4px;
 
 .retangle:hover .retangle-logo,
 .retangle:focus .retangle-logo {
-  fill: var(--main-white);
+  fill: var(--accent-color);
 }
 
 .retangle:hover,
 .retangle:focus {
-  background-color: var(--accent-color);
+  background-color: var(--main-white);
 }
 
 
