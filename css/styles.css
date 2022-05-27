@@ -483,11 +483,7 @@ border-radius: 0px 0px 4px 4px;
   padding-bottom: 60px;
   /* padding-left: 215px; */
   background: #2f303a;
-  max-width: 1600px;
- 
-  
-  margin-left: auto;
-  margin-right: auto;
+
 }
 
 
@@ -511,7 +507,7 @@ border-radius: 0px 0px 4px 4px;
 }
 
 .footer-addres {
-  display: flex;
+  /* display: flex; */
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -522,7 +518,7 @@ border-radius: 0px 0px 4px 4px;
 }
 
 .footer-mail {
-  display: flex;
+  /* display: flex; */
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -533,7 +529,7 @@ border-radius: 0px 0px 4px 4px;
 }
 
 .footer-phone {
-  display: flex;
+  /* display: flex; */
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -543,22 +539,15 @@ border-radius: 0px 0px 4px 4px;
   color: rgba(255, 255, 255, 0.6);
 }
 
-/* .footer-flex{
+ .footer-flex{
   display: flex;
-  justify-content:center;
-  align-items:center;
-} */
+  /* justify-content:center; */
 
-.join-section{
-  display: flex;
-  flex-wrap: wrap;
-  width: 145px;
-  align-items:baseline;
-  /* align-items:center; */
-  margin-left: 500px;
-  flex-direction
- 
 }
+
+ .join-section{
+  margin-left: 70px;
+} 
 
 
 
