@@ -129,8 +129,8 @@ ul {
   color: var(--accent-color);
 }
 
-.link:hover,
-.link:focus {
+.menu-link:hover,
+.menu-link:focus {
   color: var(--accent-color);
 }
 
@@ -144,8 +144,8 @@ ul {
 }
 
 .nav-mail {
-  display: flex;
-  align-items:center;
+  /* display: flex;
+  align-items:center; */
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -154,34 +154,6 @@ ul {
   color: var(--accent-black);
 }
 
-/* .nav-mail::before{
-  display: inline-block;
-  content: "";
-  
-  margin-right: 10px;
-  width: 16px;
-  height: 12px; 
-  
-  background-image: url(../images/nav-pic/mail-icon.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-
-  outline: 2px solid tomato; */
-}
-
-/* .nav-phone::before {
-  display: inline-block;
-  content: "";
-  margin-right: 10px;
-  width: 10px;
-  height: 16px;
-  background-image: url(../images/nav-pic/tel-icon.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-
-} */
 
 .nav-phone {
  
@@ -192,15 +164,22 @@ ul {
 
   color: var(--accent-black);
 }
+
+
+
 .nav-icons {
   margin-right: 10px;
+  color: var(--accent-black);
 }
 
-.nav-icons:hover,
-.nav-icons:focus{
-
+.nav-hover:hover,
+.nav-hover:focus{
   fill: var(--accent-color);
 }
+
+/* .nav-mail:hover {
+  color: var(--accent-color);
+} */
 
 /* ======== /HEADER ========*/
 
@@ -208,8 +187,6 @@ ul {
 
 .hero {
   max-width: 1600px;
-  height: 600px;
-  
   margin-left: auto;
   margin-right: auto;
   padding-top: 200px;
@@ -318,13 +295,17 @@ ul {
   height: 120px;
   width: 270px;
   background: rgba(245, 244, 250, 1);
-  background-size:contain;
-  background-repeat:no-repeat;
-  background-position:center;
   border-radius: 4px;
 
   /* outline: 1px solid tomato; */
 }
+
+.about-list-icons-pic {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
 
 
 
@@ -436,11 +417,12 @@ border-radius: 0px 0px 4px 4px;
 /* ======== /TEAM ========*/
 /* ======== Our Clients ========*/
 
-.our-clients {
-}
+
+
 
 .our-clients-flex {
   display: flex;
+  align-items:center;
 }
 
 .our-clients-flex .retangle + .retangle {
@@ -448,29 +430,37 @@ border-radius: 0px 0px 4px 4px;
 }
 
 .retangle {
-  margin-left: auto;
-  margin-right: auto;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  display:flex;
   width: 170px;
   height: 92px;
+}
+
+ 
+ .our-clients-logo {
+  display: block;
+  width: 100%;
+  height:100%;
   border: 1px solid rgba(175, 177, 184, 1);
   border-radius: 4px;
+ 
 }
 
 .retangle-logo {
+  display: block;
+margin: 16px 30px;
   fill: #AFB1B8;
 }
 
-.retangle:hover .retangle-logo,
-.retangle:focus .retangle-logo {
+.our-clients-logo:hover .retangle-logo,
+.our-clients-logo:focus .retangle-logo {
   fill: var(--accent-color);
 }
 
-.retangle:hover,
-.retangle:focus {
-  background-color: var(--main-white);
+
+
+.our-clients-logo:hover,
+.our-clients-logoe:focus {
+  border: 1px solid #2196F3;
 }
 
 
@@ -541,6 +531,7 @@ border-radius: 0px 0px 4px 4px;
 
  .footer-flex{
   display: flex;
+  align-items: baseline;
   /* justify-content:center; */
 
 }
@@ -636,24 +627,16 @@ border-radius: 50%;
   letter-spacing: 0.03em;
   cursor: pointer;
   background: #f5f4fa;
+  border-radius: 4px;
 }
 
 .filter-btn:hover,
 .filter-btn:focus {
-  font-family: inherit;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
-  text-align: center;
-  letter-spacing: 0.03em;
-  cursor: pointer;
   background: var(--accent-color);
   color: var(--main-white);
-  background: #2196F3;
-/* shadow-middle */
-
-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-border-radius: 4px;
+box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+0px 1px 2px rgba(0, 0, 0, 0.08), 
+0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .filter-btn-active {
@@ -666,10 +649,8 @@ border-radius: 4px;
 
 /* ======== OUR WORK ========*/
 
-.our-work-item:hover,
-.our-work-item:focus {
-  background: #FFFFFF;
-  border: 1px solid #EEEEEE;
+.link-shadow:hover,
+.link-shadow:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
    0px 4px 4px rgba(0, 0, 0, 0.06), 
    1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -724,9 +705,9 @@ border-radius: 4px;
   color: var(--accent-color);
 }
 
-.project-type:hover,
+/* .project-type:hover,
 .project-type:focus {
   color: var(--accent-color);
-}
+} */
 
 /* ======== /OUR WORK ========*/
