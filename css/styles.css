@@ -173,11 +173,15 @@ ul {
   fill: var(--accent-black);
 }
 
-.hover-nav .nav-icons:hover,
-.hover-nav .nav-icons:focus {
- color: var(--accent-color);
+.hover-nav:hover .nav-icons,
+.hover-nav:focus .nav-icons {
  fill: var(--accent-color);
 }
+
+/* .nav-phone:hover .nav-icons,
+.nav-phone:focus .nav-icons {
+ fill: var(--accent-color);
+} */
 
 .hover-nav:hover,
 .hover-nav:focus {
