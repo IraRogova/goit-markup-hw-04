@@ -134,6 +134,12 @@ ul {
   color: var(--accent-color);
 }
 
+/* .link:hover,
+.link:focus {
+  color: var(--accent-color);
+} */
+
+
 .nav-contact {
   display: flex;
   margin-left: auto;
@@ -150,36 +156,34 @@ ul {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-
   color: var(--accent-black);
 }
 
-
 .nav-phone {
- 
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-
   color: var(--accent-black);
 }
-
 
 
 .nav-icons {
   margin-right: 10px;
-  color: var(--accent-black);
+  fill: var(--accent-black);
 }
 
-.nav-hover:hover,
-.nav-hover:focus{
-  fill: var(--accent-color);
+.hover-nav .nav-icons:hover,
+.hover-nav .nav-icons:focus {
+ color: var(--accent-color);
+ fill: var(--accent-color);
 }
 
-/* .nav-mail:hover {
-  color: var(--accent-color);
-} */
+.hover-nav:hover,
+.hover-nav:focus {
+color: var(--accent-color);
+}
+
 
 /* ======== /HEADER ========*/
 
